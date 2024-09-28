@@ -2,18 +2,28 @@ package task1;
 
 public class Cat extends Animal {
 
-    public Cat(String food, String location) {
+    private String toHunt;
+
+    public Cat(String food, String location, String toHunt) {
         super(food, location);
+        this.toHunt = toHunt;
+    }
 
+    public String getToHunt() {
+        return toHunt;
+    }
+
+    public void setToHunt(String toHunt) {
+        this.toHunt = toHunt;
     }
 
     @Override
-    public void makeNoise() {
-        System.out.println("Mew mew mew mew");
+    public String makeNoise() {
+        return "Mew mew mew mew";
     }
 
     @Override
-    public void Abilities() {
-        System.out.println("Mouse hunt");
+    public String toString() {
+        return "Cat [to hunt = " + toHunt + ", food = " + super.getFood() + ", location = " + super.getLocation() + "]";
     }
 }

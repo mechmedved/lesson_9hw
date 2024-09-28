@@ -2,17 +2,28 @@ package task1;
 
 public class Horse extends Animal {
 
-    public Horse(String food, String location) {
+    private String toRun;
+
+    public Horse(String food, String location, String toRun) {
         super(food, location);
+        this.toRun = toRun;
+    }
+
+    public String getToRun() {
+        return toRun;
+    }
+
+    public void setToRun(String toRun) {
+        this.toRun = toRun;
     }
 
     @Override
-    public void makeNoise() {
-        System.out.println("Ihh-go-go");
+    public String makeNoise() {
+        return "Ihh-go-go";
     }
 
     @Override
-    public void Abilities() {
-        System.out.println("Sleeps stands up");
+    public String toString() {
+        return "Horse [to run = " + toRun + ", food = " + super.getFood() + ", location = " + super.getLocation() + "]";
     }
 }

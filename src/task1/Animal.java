@@ -39,11 +39,15 @@ public class Animal {
         System.out.println("Sleeping...");
     }
 
-    public void makeNoise() {
-        System.out.println("Making noise...");
+    public String makeNoise() {
+        return null;
     }
 
-    public void Abilities(){
-        System.out.println("Abilities...");
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "food='" + food + '\'' +
+                ", location='" + location + '\'' +
+                '}';
     }
 }

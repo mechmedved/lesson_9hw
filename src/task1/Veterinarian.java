@@ -1,8 +1,8 @@
 package task1;
 
 public class Veterinarian {
-    public void treadAnimal(Animal animal){
-        System.out.println(animal.getFood());
-        System.out.println(animal.getLocation());
+    public void treatAnimal(Animal animal){
+        System.out.println(animal.toString());
+        System.out.println(animal.makeNoise());
     }
 }
