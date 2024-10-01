@@ -1,8 +1,15 @@
 package task2;
 
+import java.util.Arrays;
+
 public class Catergory {
     private String name;
-    private String[] goods;
+    private Product[] goods;
+
+    public Catergory(String name, Product[] goods) {
+        this.name = name;
+        this.goods = goods;
+    }
 
     public String getName() {
         return name;
@@ -12,11 +19,11 @@ public class Catergory {
         this.name = name;
     }
 
-    public String[] getGoods() {
+    public Product[] getGoods() {
         return goods;
     }
 
-    public void setGoods(String[] goods) {
+    public void setGoods(Product[] goods) {
         this.goods = goods;
     }
 }

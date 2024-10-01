@@ -27,11 +27,11 @@ public class Person {
         this.age = age;
     }
 
-    public String move(Person person) {
-        return person.getFullName() + " идет";
+    public String move() {
+        return fullName + " идет";
     }
 
-    public String talk(Person person) {
-        return person.getFullName() + " говорит";
+    public String talk() {
+        return fullName + " говорит";
     }
 }

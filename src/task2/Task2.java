@@ -6,15 +6,18 @@ public class Task2 {
         user.setLogin("buyer");
         user.setPassword("d_5Wld");
 
-        String[]goods1 = {"potato","onion","cucumber"};
-        String[]goods2 = {"apple","orange","mandarin"};
+        Product product1 = new Product("potato","10",5);
+        Product product2 = new Product("onion","2",5);
+        Product product3 = new Product("cucumber","3",5);
+        Product product4 = new Product("apple","5",5);
+        Product product5 = new Product("orange","6",5);
+        Product product6 = new Product("mandarin","7",5);
 
-        Catergory catergory = new Catergory();
-        Catergory catergory2 = new Catergory();
-        catergory.setName("vegetables");
-        catergory2.setName("fruit");
-        catergory.setGoods(goods1);
-        catergory2.setGoods(goods2);
+        Product [] goods1 = {product1,product2,product3};
+        Product [] goods2 = {product4,product5,product6};
+
+        Catergory catergory1 = new Catergory("vegetables",goods1);
+        Catergory catergory2 = new Catergory("fruit",goods2);
 
         Basket cart = new Basket();
         String[]purchasedGoods = {"apple","potato","cucumber"};
