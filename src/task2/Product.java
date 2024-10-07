@@ -34,4 +34,12 @@ public class Product {
     public void setRating(int rating) {
         this.rating = rating;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Product{" +
+                " name %s," +
+                " price %s," +
+                " rating %d}",getName(), getPrice(), getRating());
+    }
 }

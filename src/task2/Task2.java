@@ -20,7 +20,7 @@ public class Task2 {
         Catergory catergory2 = new Catergory("fruit",goods2);
 
         Basket cart = new Basket();
-        String[]purchasedGoods = {"apple","potato","cucumber"};
+        Product[]purchasedGoods = {product1,product3,product5};
         cart.setPurchasedGoods(purchasedGoods);
         user.setBasket(cart);
 
@@ -28,7 +28,7 @@ public class Task2 {
         System.out.println(user.getPassword());
 
         for(int i=0;i< user.getBasket().getPurchasedGoods().length;i++){
-            System.out.println(user.getBasket().getPurchasedGoods()[i]);
+            System.out.println(user.getBasket().getPurchasedGoods()[i].toString());
         }
     }
 }

@@ -1,13 +1,15 @@
 package task2;
 
-public class Basket {
-    private String[] purchasedGoods;
+import java.util.Arrays;
 
-    public String[] getPurchasedGoods() {
+public class Basket {
+    private Product[] purchasedGoods;
+
+    public Product[] getPurchasedGoods() {
         return purchasedGoods;
     }
 
-    public void setPurchasedGoods(String[] purchasedGoods) {
+    public void setPurchasedGoods(Product[] purchasedGoods) {
         this.purchasedGoods = purchasedGoods;
     }
 }
